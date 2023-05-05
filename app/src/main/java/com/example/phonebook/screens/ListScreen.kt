@@ -109,7 +109,7 @@ private fun ContactsList(
             items(
                 count = filteredContacts.size,
             ) { index ->
-                val contact = filteredContacts[index]
+                val contact = filteredContacts.sortedByDescending { it.id }[index]
                 Contact(
                     contact = contact,
                     onContactClick = onContactClick,
