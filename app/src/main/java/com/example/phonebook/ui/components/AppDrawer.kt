@@ -117,7 +117,7 @@ fun ScreenNavigationButtonPreview() {
     PhoneBookTheme {
         ScreenNavigationButton(
             icon = Icons.Filled.Home,
-            label = "Notes",
+            label = "Contacts",
             isSelected = false,
             onClick = { }
         )
@@ -169,7 +169,7 @@ fun AppDrawer(
 
         ScreenNavigationButton(
             icon = Icons.Filled.Home,
-            label = "Notes",
+            label = "Contacts",
             isSelected = currentScreen == Screen.List,
             onClick = {
                 PhoneBookRouter.navigateTo(Screen.List)
